@@ -1,0 +1,13 @@
+
+
+- name: Install Logstash
+  apt:
+          name: logstash
+          update_cache: yes
+
+
+- name: Started logstash
+  service:
+    name: logstash
+    state: started
+
