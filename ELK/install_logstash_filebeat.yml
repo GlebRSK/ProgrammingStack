@@ -3,11 +3,11 @@
   become: yes
   become_user: root
   roles:
-  - { role: restelastic }
+  - { role: filebeat }
 
 - hosts: server2
   remote_user: master
   become: yes
   become_user: root
   roles:
-  - { role: restkibana }
+  - { role: logstash }

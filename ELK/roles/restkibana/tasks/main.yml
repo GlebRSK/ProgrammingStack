@@ -1,0 +1,5 @@
+- name: Started kibana
+  service:
+    name: kibana
+    state: restarted
+
